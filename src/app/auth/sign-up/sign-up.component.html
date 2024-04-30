@@ -1,1 +1,18 @@
-<p>sign-up works!</p>
+<div class="signup-form">
+    <form (ngSubmit)="register()">
+      <label for="username">Username:</label>
+      <input type="text" id="username" [(ngModel)]="username" name="username" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="password" name="password" required>
+  
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" [(ngModel)]="confirmPassword" name="confirmPassword" required>
+  
+      <button type="submit">Sign Up</button>
+      <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+      </div>
+    </form>
+  </div>
+  
