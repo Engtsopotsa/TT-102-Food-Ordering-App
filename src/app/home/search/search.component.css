@@ -1,0 +1,28 @@
+.search-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 8px;
+    margin-right: 5px;
+    width: 60%;
+  }
+  
+  .search-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  

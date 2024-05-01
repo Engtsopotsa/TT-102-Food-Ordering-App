@@ -1,0 +1,30 @@
+.checkout-container {
+    padding: 20px;
+  }
+  
+  .checkout-container h2 {
+    color: #333;
+  }
+  
+  .checkout-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .checkout-container li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .checkout-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .checkout-container button:hover {
+    background-color: #0056b3;
+  }
+  

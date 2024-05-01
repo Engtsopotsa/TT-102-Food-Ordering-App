@@ -1,1 +1,14 @@
-<p>restaurant-detail works!</p>
+<div class="restaurant-details">
+    <h2>Menu Items</h2>
+    <ul *ngIf="restaurantMenu.length; else noMenu">
+      <li *ngFor="let item of restaurantMenu">
+        {{ item.name }} - {{ item.price | currency:'USD' }}
+        <button (click)="addToCart(item)">Add to Cart</button>
+      </li>
+    </ul>
+    <ng-template #noMenu>
+      <p>No menu items found for this restaurant.</p>
+    </ng-template>
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  </div>
+  

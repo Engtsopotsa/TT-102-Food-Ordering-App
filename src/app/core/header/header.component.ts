@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../auth/auth.service'; // Update the path as needed
+import { CommonModule } from '@angular/common'; // Import CommonModule
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css'],
+  imports: [CommonModule] // Import CommonModule
 })
-
 export class HeaderComponent {
   constructor(private authService: AuthService) {}
 
@@ -22,4 +22,3 @@ export class HeaderComponent {
     this.authService.logout();
   }
 }
-

@@ -1,1 +1,7 @@
-<p>home-page works!</p>
+<div class="home-page">
+    <h1>Welcome to the Food Ordering App</h1>
+    <p *ngIf="authService.isLoggedIn()">Browse our menu and enjoy our services.</p>
+    <p *ngIf="!authService.isLoggedIn()">Please log in to see our menus and start ordering.</p>
+    <app-search *ngIf="authService.isLoggedIn()"></app-search> <!-- Embedding the SearchComponent -->
+  </div>
+  

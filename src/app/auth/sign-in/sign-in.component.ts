@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth.service'; // Update the import path as necessary
+import { FormsModule } from '@angular/forms'; // Import FormsModule
+import { CommonModule } from '@angular/common'; // Import CommonModule
 
 @Component({
   selector: 'app-sign-in',
   standalone: true,
-  imports: [],
   templateUrl: './sign-in.component.html',
-  styleUrl: './sign-in.component.css'
+  styleUrls: ['./sign-in.component.css'],
+  imports: [FormsModule,CommonModule] // Import FormsModule
 })
-
 export class SignInComponent {
   username: string = '';
   password: string = '';
@@ -29,4 +30,3 @@ export class SignInComponent {
     });
   }
 }
-

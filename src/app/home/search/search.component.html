@@ -1,1 +1,10 @@
-<p>search works!</p>
+<div class="search-container">
+  <form (submit)="performSearch()">
+    <input type="text" formControlName="searchQuery" placeholder="Search menu items..." name="search">
+    <button type="submit">Search</button>
+  </form>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  <ul *ngIf="results.length > 0">
+    <li *ngFor="let item of results">{{ item.name }}</li>
+  </ul>
+</div>

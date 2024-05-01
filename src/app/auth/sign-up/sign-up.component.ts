@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../auth.service'; // Update the import path as necessary
-
+import { CommonModule } from '@angular/common'; // Import CommonModule
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 
 @Component({
   selector: 'app-sign-up',
   standalone: true,
-  imports: [],
   templateUrl: './sign-up.component.html',
-  styleUrl: './sign-up.component.css'
+  styleUrls: ['./sign-up.component.css'],
+  imports: [CommonModule,FormsModule] // Import FormsModule
 })
-
-
 export class SignUpComponent {
   username: string = '';
   password: string = '';
@@ -34,4 +33,3 @@ export class SignUpComponent {
     });
   }
 }
-
