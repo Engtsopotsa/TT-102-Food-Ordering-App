@@ -8,12 +8,13 @@ export interface Address {
 export interface User {
   id: number;
   username: string;
-  hashedPassword: string;
+  password: string;  // Plain text password for simplicity
   email: string;
   fullName: string;
   address: Address;
   phone: string;
   role: string;
 }
+
 
   

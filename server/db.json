@@ -3,7 +3,7 @@
         {
           "id": 1,
           "username": "john_doe",
-          "hashedPassword": "some_hashed_password_here",
+          "password": "admin",
           "email": "john.doe@example.com",
           "fullName": "John Doe",
           "address": {
@@ -18,7 +18,7 @@
         {
           "id": 2,
           "username": "jane_smith",
-          "hashedPassword": "another_hashed_password_here",
+          "password": "admin2",
           "email": "jane.smith@example.com",
           "fullName": "Jane Smith",
           "address": {
