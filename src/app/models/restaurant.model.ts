@@ -1,8 +1,10 @@
 export interface Restaurant {
-    id: string;
-    name: string;
-    address: string;
-    cuisine: string;
-    // Add other relevant fields
-  }
+  id: number;
+  name: string;
+  description: string;
+  phone: string;
+  address: string;
+  menuItems: number[];  // Array of menu item IDs
+}
+
   

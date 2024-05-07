@@ -1,0 +1,624 @@
+{
+    "users": [
+        {
+          "id": 1,
+          "username": "john_doe",
+          "hashedPassword": "some_hashed_password_here",
+          "email": "john.doe@example.com",
+          "fullName": "John Doe",
+          "address": {
+            "street": "123 Apple St",
+            "city": "New York",
+            "state": "NY",
+            "zipCode": "10001"
+          },
+          "phone": "555-1234",
+          "role": "admin"
+        },
+        {
+          "id": 2,
+          "username": "jane_smith",
+          "hashedPassword": "another_hashed_password_here",
+          "email": "jane.smith@example.com",
+          "fullName": "Jane Smith",
+          "address": {
+            "street": "456 Orange Ave",
+            "city": "Los Angeles",
+            "state": "CA",
+            "zipCode": "90001"
+          },
+          "phone": "555-5678",
+          "role": "user"
+        }
+      ],
+    "menuItems": [
+        {
+          "id": 1,
+          "name": "Margherita Pizza",
+          "description": "Classic Margherita with fresh tomatoes, mozzarella cheese, and basil.",
+          "price": 12.00,
+          "imageUrl": "https://picsum.photos/300/200?random=1"
+        },
+        {
+          "id": 2,
+          "name": "Vegan Burger",
+          "description": "A delicious plant-based burger topped with avocado, lettuce, tomato, and vegan mayo.",
+          "price": 15.00,
+          "imageUrl": "https://picsum.photos/300/200?random=2"
+        },
+        {
+          "id": 3,
+          "name": "Caesar Salad",
+          "description": "Crisp romaine lettuce, parmesan cheese, and croutons, served with Caesar dressing.",
+          "price": 10.00,
+          "imageUrl": "https://picsum.photos/300/200?random=3"
+        },
+        {
+          "id": 4,
+          "name": "Chicken Curry",
+          "description": "Aromatic chicken curry made with a blend of spices, served with rice.",
+          "price": 13.50,
+          "imageUrl": "https://picsum.photos/300/200?random=4"
+        },
+        {
+          "id": 5,
+          "name": "Sushi Platter",
+          "description": "Assorted sushi platter featuring salmon, tuna, and cucumber rolls.",
+          "price": 22.00,
+          "imageUrl": "https://picsum.photos/300/200?random=5"
+        },
+        {
+          "id": 6,
+          "name": "Beef Tacos",
+          "description": "Three soft shell tacos with seasoned beef, cheese, and fresh salsa.",
+          "price": 9.00,
+          "imageUrl": "https://picsum.photos/300/200?random=6"
+        },
+        {
+          "id": 7,
+          "name": "Mushroom Risotto",
+          "description": "Creamy risotto with sautéed mushrooms and a sprinkle of truffle oil.",
+          "price": 16.00,
+          "imageUrl": "https://picsum.photos/300/200?random=7"
+        },
+        {
+          "id": 8,
+          "name": "Pulled Pork Sandwich",
+          "description": "Slow-cooked pulled pork with BBQ sauce on a toasted bun.",
+          "price": 11.00,
+          "imageUrl": "https://picsum.photos/300/200?random=8"
+        },
+        {
+          "id": 9,
+          "name": "Pancakes",
+          "description": "Fluffy pancakes served with syrup and fresh berries.",
+          "price": 8.00,
+          "imageUrl": "https://picsum.photos/300/200?random=9"
+        },
+        {
+          "id": 10,
+          "name": "Spaghetti Carbonara",
+          "description": "Classic spaghetti with creamy carbonara sauce and pieces of crispy bacon.",
+          "price": 14.00,
+          "imageUrl": "https://picsum.photos/300/200?random=10"
+        },
+                    {
+              "id": 11,
+              "name": "Grilled Salmon",
+              "description": "Perfectly grilled salmon served with a side of asparagus and hollandaise sauce.",
+              "price": 18.00,
+              "imageUrl": "https://picsum.photos/300/200?random=11"
+            },
+            {
+              "id": 12,
+              "name": "Greek Salad",
+              "description": "Fresh cucumber, tomatoes, red onion, olives, and feta cheese with olive oil dressing.",
+              "price": 9.50,
+              "imageUrl": "https://picsum.photos/300/200?random=12"
+            },
+            {
+              "id": 13,
+              "name": "Lamb Gyro",
+              "description": "Tender slices of lamb with tzatziki sauce, onions, lettuce, and tomato wrapped in a soft pita.",
+              "price": 7.50,
+              "imageUrl": "https://picsum.photos/300/200?random=13"
+            },
+            {
+              "id": 14,
+              "name": "Quinoa Salad",
+              "description": "Organic quinoa with cherry tomatoes, cucumber, parsley, and a lemon olive oil dressing.",
+              "price": 12.00,
+              "imageUrl": "https://picsum.photos/300/200?random=14"
+            },
+            {
+              "id": 15,
+              "name": "BBQ Ribs",
+              "description": "Half a rack of slow-roasted ribs coated in our signature BBQ sauce.",
+              "price": 20.00,
+              "imageUrl": "https://picsum.photos/300/200?random=15"
+            },
+            {
+              "id": 16,
+              "name": "Vegetarian Pizza",
+              "description": "A delicious combination of bell peppers, onions, mushrooms, and olives on a gluten-free crust.",
+              "price": 15.00,
+              "imageUrl": "https://picsum.photos/300/200?random=16"
+            },
+            {
+              "id": 17,
+              "name": "Tom Yum Soup",
+              "description": "A hot and sour Thai soup made with shrimp, mushrooms, lemongrass, and lime leaves.",
+              "price": 12.50,
+              "imageUrl": "https://picsum.photos/300/200?random=17"
+            },
+            {
+              "id": 18,
+              "name": "Chocolate Cake",
+              "description": "Rich and moist chocolate cake with a creamy chocolate ganache frosting.",
+              "price": 6.50,
+              "imageUrl": "https://picsum.photos/300/200?random=18"
+            },
+            {
+              "id": 19,
+              "name": "Cobb Salad",
+              "description": "A classic Cobb salad with chicken, bacon, avocado, egg, and blue cheese.",
+              "price": 13.00,
+              "imageUrl": "https://picsum.photos/300/200?random=19"
+            },
+            {
+              "id": 20,
+              "name": "Pad Thai",
+              "description": "Traditional Pad Thai with rice noodles, peanuts, scrambled eggs, and fresh herbs.",
+              "price": 14.50,
+              "imageUrl": "https://picsum.photos/300/200?random=20"
+            },
+            {
+              "id": 21,
+              "name": "French Onion Soup",
+              "description": "A rich soup made with caramelized onions and beef broth, topped with a toasted crouton and melted Gruyere cheese.",
+              "price": 11.00,
+              "imageUrl": "https://picsum.photos/300/200?random=21"
+            },
+            {
+              "id": 22,
+              "name": "Tiramisu",
+              "description": "Classic Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese, dusted with cocoa powder.",
+              "price": 7.00,
+              "imageUrl": "https://picsum.photos/300/200?random=22"
+            },
+            {
+              "id": 23,
+              "name": "Falafel Wrap",
+              "description": "Crispy falafel balls wrapped in a flatbread with tomatoes, lettuce, and tahini sauce.",
+              "price": 8.50,
+              "imageUrl": "https://picsum.photos/300/200?random=23"
+            },
+            {
+              "id": 24,
+              "name": "Steak Frites",
+              "description": "Grilled steak served with a heap of crispy French fries.",
+              "price": 25.00,
+              "imageUrl": "https://picsum.photos/300/200?random=24"
+            },
+            {
+              "id": 25,
+              "name": "Mango Sticky Rice",
+              "description": "Sweet sticky rice with fresh mango slices and coconut milk.",
+              "price": 10.00,
+              "imageUrl": "https://picsum.photos/300/200?random=25"
+            }
+      ],
+    "orders": [
+        {
+          "id": 1,
+          "userId": 1,
+          "items": [
+            {"menuItemId": 1, "quantity": 2},
+            {"menuItemId": 5, "quantity": 1}
+          ],
+          "total": 46.00,
+          "status": "completed"
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "items": [
+            {"menuItemId": 2, "quantity": 1},
+            {"menuItemId": 3, "quantity": 2}
+          ],
+          "total": 35.00,
+          "status": "pending"
+        },
+        {
+          "id": 3,
+          "userId": 1,
+          "items": [
+            {"menuItemId": 4, "quantity": 1}
+          ],
+          "total": 13.50,
+          "status": "completed"
+        },
+        {
+          "id": 4,
+          "userId": 2,
+          "items": [
+            {"menuItemId": 6, "quantity": 3}
+          ],
+          "total": 27.00,
+          "status": "completed"
+        },
+        {
+          "id": 5,
+          "userId": 1,
+          "items": [
+            {"menuItemId": 7, "quantity": 1},
+            {"menuItemId": 9, "quantity": 1}
+          ],
+          "total": 24.00,
+          "status": "pending"
+        },
+        {
+          "id": 6,
+          "userId": 2,
+          "items": [
+            {"menuItemId": 8, "quantity": 2}
+          ],
+          "total": 22.00,
+          "status": "completed"
+        },
+        {
+          "id": 7,
+          "userId": 1,
+          "items": [
+            {"menuItemId": 10, "quantity": 1}
+          ],
+          "total": 14.00,
+          "status": "completed"
+        },
+        {
+          "id": 8,
+          "userId": 2,
+          "items": [
+            {"menuItemId": 5, "quantity": 2}
+          ],
+          "total": 44.00,
+          "status": "pending"
+        },
+        {
+          "id": 9,
+          "userId": 1,
+          "items": [
+            {"menuItemId": 3, "quantity": 1},
+            {"menuItemId": 1, "quantity": 3}
+          ],
+          "total": 46.00,
+          "status": "pending"
+        },
+        {
+          "id": 10,
+          "userId": 2,
+          "items": [
+            {"menuItemId": 4, "quantity": 2}
+          ],
+          "total": 27.00,
+          "status": "completed"
+        }
+      ],
+    "restaurants": [
+        {
+          "id": 1,
+          "name": "The Italian Bistro",
+          "description": "Traditional Italian cuisine with a modern twist. Featuring a range of pasta, pizza, and seafood dishes.",
+          "phone": "555-1001",
+          "address": "1234 Elm Street, Little Italy, New York, NY",
+          "menuItems": [1, 10]
+        },
+        {
+          "id": 2,
+          "name": "Green Earth Cafe",
+          "description": "Fresh and healthy vegan and vegetarian dishes crafted with local and organic ingredients.",
+          "phone": "555-1002",
+          "address": "456 Maple Avenue, Downtown, Los Angeles, CA",
+          "menuItems": [2, 3]
+        },
+        {
+          "id": 3,
+          "name": "Sushi Dreams",
+          "description": "Authentic Japanese sushi bar serving a wide selection of sushi rolls, sashimi, and nigiri.",
+          "phone": "555-1003",
+          "address": "789 Pine Road, Japantown, San Francisco, CA",
+          "menuItems": [5]
+        },
+        {
+          "id": 4,
+          "name": "Curry in a Hurry",
+          "description": "Quick and delicious Indian curries, perfect for a spicy and flavorful meal on the go.",
+          "phone": "555-1004",
+          "address": "321 Oak Street, Market District, Seattle, WA",
+          "menuItems": [4]
+        },
+        {
+          "id": 5,
+          "name": "Burger Town",
+          "description": "Classic American burgers and fries with a selection of gourmet and traditional toppings.",
+          "phone": "555-1005",
+          "address": "654 Spruce Way, Waterfront, Chicago, IL",
+          "menuItems": [2, 6]
+        },
+        {
+          "id": 6,
+          "name": "Taco Paradise",
+          "description": "A variety of mouth-watering tacos and Mexican street food favorites.",
+          "phone": "555-1006",
+          "address": "987 Cedar Lane, SoHo, Houston, TX",
+          "menuItems": [6]
+        },
+        {
+          "id": 7,
+          "name": "Pasta House",
+          "description": "From spaghetti to lasagna, enjoy our homemade pasta dishes with sauces made from scratch.",
+          "phone": "555-1007",
+          "address": "432 Willow Drive, Historic District, Philadelphia, PA",
+          "menuItems": [10]
+        },
+        {
+          "id": 8,
+          "name": "BBQ Heaven",
+          "description": "Smokey ribs, pulled pork, and other barbecue essentials slow-cooked to perfection.",
+          "phone": "555-1008",
+          "address": "369 Birch Road, River Valley, Phoenix, AZ",
+          "menuItems": [8]
+        },
+        {
+          "id": 9,
+          "name": "Pancake World",
+          "description": "Enjoy our wide variety of pancakes and breakfast items, served all day.",
+          "phone": "555-1009",
+          "address": "258 Elmwood Boulevard, Eastside, San Antonio, TX",
+          "menuItems": [9]
+        },
+        {
+          "id": 10,
+          "name": "Seafood Delight",
+          "description": "The freshest seafood dishes, from lobster rolls to grilled salmon, all sourced locally.",
+          "phone": "555-1010",
+          "address": "147 River Street, Beachside, Miami, FL",
+          "menuItems": [1, 3]
+        },
+        {
+            "id": 11,
+            "name": "French Cafe",
+            "description": "Cozy cafe offering traditional French pastries and coffee.",
+            "phone": "555-1011",
+            "address": "101 Main Street, Little Paris, Boston, MA",
+            "menuItems": [18, 22]
+          },
+          {
+            "id": 12,
+            "name": "Ramen House",
+            "description": "Authentic ramen with rich, flavorful broths and freshly made noodles.",
+            "phone": "555-1012",
+            "address": "202 Noodle Way, Chinatown, San Diego, CA",
+            "menuItems": [17]
+          },
+          {
+            "id": 13,
+            "name": "Mediterranean Magic",
+            "description": "A delightful selection of Mediterranean dishes from Greece and the Middle East.",
+            "phone": "555-1013",
+            "address": "250 Olive Blvd, Midtown, Atlanta, GA",
+            "menuItems": [12, 13, 23]
+          },
+          {
+            "id": 14,
+            "name": "Steakhouse Elite",
+            "description": "Premium cuts of meat and exquisite wines in an upscale setting.",
+            "phone": "555-1014",
+            "address": "400 Luxury Lane, Downtown, Dallas, TX",
+            "menuItems": [24]
+          },
+          {
+            "id": 15,
+            "name": "Veggie Delights",
+            "description": "Creative vegetarian and vegan dishes full of flavor and innovation.",
+            "phone": "555-1015",
+            "address": "520 Green Road, Eco Park, Portland, OR",
+            "menuItems": [14]
+          },
+          {
+            "id": 16,
+            "name": "Spice of India",
+            "description": "Explore the vibrant and diverse flavors of India with every dish.",
+            "phone": "555-1016",
+            "address": "330 Curry Ave, Little India, Newark, NJ",
+            "menuItems": [4, 17]
+          },
+          {
+            "id": 17,
+            "name": "Thai Bites",
+            "description": "A modern take on classic Thai dishes, from pad thai to green curry.",
+            "phone": "555-1017",
+            "address": "221 Spice St, Downtown, Seattle, WA",
+            "menuItems": [20]
+          },
+          {
+            "id": 18,
+            "name": "Dumpling Den",
+            "description": "Handmade dumplings and other Chinese delicacies.",
+            "phone": "555-1018",
+            "address": "112 Dumpling Dr, Chinatown, New York, NY",
+            "menuItems": [21]
+          },
+          {
+            "id": 19,
+            "name": "Southern Comfort",
+            "description": "Enjoy the heart and soul of traditional southern cuisine.",
+            "phone": "555-1019",
+            "address": "788 Peachtree St, Historic South, Charleston, SC",
+            "menuItems": [15, 24]
+          },
+          {
+            "id": 20,
+            "name": "Island Getaway",
+            "description": "Tropical flavors and relaxed vibes, featuring Caribbean and Hawaiian dishes.",
+            "phone": "555-1020",
+            "address": "330 Ocean Drive, Beachfront, Honolulu, HI",
+            "menuItems": [25]
+          }
+      ],
+    "payments": [
+        {
+          "id": 1,
+          "userId": 1,
+          "orderId": 1,
+          "amount": 46.00,
+          "method": "Credit Card",
+          "status": "completed"
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "orderId": 2,
+          "amount": 35.00,
+          "method": "PayPal",
+          "status": "completed"
+        },
+        {
+          "id": 3,
+          "userId": 1,
+          "orderId": 3,
+          "amount": 13.50,
+          "method": "Credit Card",
+          "status": "completed"
+        },
+        {
+          "id": 4,
+          "userId": 2,
+          "orderId": 4,
+          "amount": 27.00,
+          "method": "Debit Card",
+          "status": "failed"
+        },
+        {
+          "id": 5,
+          "userId": 1,
+          "orderId": 5,
+          "amount": 24.00,
+          "method": "Credit Card",
+          "status": "completed"
+        },
+        {
+          "id": 6,
+          "userId": 2,
+          "orderId": 6,
+          "amount": 22.00,
+          "method": "PayPal",
+          "status": "completed"
+        },
+        {
+          "id": 7,
+          "userId": 1,
+          "orderId": 7,
+          "amount": 14.00,
+          "method": "Credit Card",
+          "status": "completed"
+        },
+        {
+          "id": 8,
+          "userId": 2,
+          "orderId": 8,
+          "amount": 44.00,
+          "method": "Debit Card",
+          "status": "completed"
+        },
+        {
+          "id": 9,
+          "userId": 1,
+          "orderId": 9,
+          "amount": 46.00,
+          "method": "Credit Card",
+          "status": "pending"
+        },
+        {
+          "id": 10,
+          "userId": 2,
+          "orderId": 10,
+          "amount": 27.00,
+          "method": "PayPal",
+          "status": "completed"
+        }
+      ],
+    "reviews": [
+        {
+          "id": 1,
+          "userId": 1,
+          "restaurantId": 1,
+          "content": "Amazing experience with authentic Italian dishes. Highly recommend the Margherita Pizza!",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "menuItemId": 2,
+          "content": "Loved the vegan burger! The toppings were fresh and flavorful.",
+          "rating": 4
+        },
+        {
+          "id": 3,
+          "userId": 1,
+          "restaurantId": 3,
+          "content": "Sushi Dreams always delivers! The freshest sushi in town.",
+          "rating": 5
+        },
+        {
+          "id": 4,
+          "userId": 2,
+          "menuItemId": 4,
+          "content": "The chicken curry was a bit too spicy for my taste, but still very delicious.",
+          "rating": 3
+        },
+        {
+          "id": 5,
+          "userId": 1,
+          "restaurantId": 5,
+          "content": "Great place for a casual burger night. Burgers are juicy and well-cooked.",
+          "rating": 4
+        },
+        {
+          "id": 6,
+          "userId": 2,
+          "menuItemId": 6,
+          "content": "Tacos could use more seasoning, but the salsa was fantastic.",
+          "rating": 3
+        },
+        {
+          "id": 7,
+          "userId": 1,
+          "restaurantId": 7,
+          "content": "Pasta House never disappoints. The spaghetti carbonara is a must-try!",
+          "rating": 5
+        },
+        {
+          "id": 8,
+          "userId": 2,
+          "menuItemId": 8,
+          "content": "Pulled pork sandwich was incredibly tender and well-flavored. Will order again!",
+          "rating": 5
+        },
+        {
+          "id": 9,
+          "userId": 1,
+          "restaurantId": 9,
+          "content": "Pancakes were a bit dry. Expected better given the reviews.",
+          "rating": 2
+        },
+        {
+          "id": 10,
+          "userId": 2,
+          "menuItemId": 10,
+          "content": "The seafood platter had a good variety and was served fresh.",
+          "rating": 4
+        }
+      ]
+  }
+  

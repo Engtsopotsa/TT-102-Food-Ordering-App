@@ -1,34 +1,39 @@
-.login-form {
-    max-width: 300px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .login-form input[type="text"],
-  .login-form input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    margin: 10px 0;
-  }
-  
-  .login-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .login-form button:hover {
-    background-color: #0056b3;
-  }
-  
-  .error-message {
-    color: red;
-    margin-top: 10px;
-  }
-  
+.registration-container {
+  width: 600px;
+  margin-top: 50px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.button-group button {
+  width: 49%;
+  margin-right: 2%;
+}
+
+.button-group button:last-child {
+  margin-right: 0;
+}
+
+.social-login button {
+  width: 48%;
+  margin-right: 4%;
+  text-align: center;
+}
+
+.social-login button:last-child {
+  margin-right: 0;
+}

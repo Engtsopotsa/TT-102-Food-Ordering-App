@@ -1,8 +1,19 @@
+export interface Address {
+  street: string;
+  city: string;
+  state: string;
+  zipCode: string;
+}
+
 export interface User {
-    id: number;
-    username: string;
-    email: string;
-    password?: string;  // Optional field, should not be fetched or stored in front-end in real applications
-    // Add any additional fields that are relevant to your application
-  }
+  id: number;
+  username: string;
+  hashedPassword: string;
+  email: string;
+  fullName: string;
+  address: Address;
+  phone: string;
+  role: string;
+}
+
   
